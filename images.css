@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+h1 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  font-size: 80px;
+  font-family: 'Playfair Display', serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  padding: 20px;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+input:focus, input:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+input:invalid {
+  background-color: #350a0a;
+  -webkit-animation: invalid 1s ease-in-out;
+          animation: invalid 1s ease-in-out;
+}
+
+button {
+  padding: 9px;
+  background-color: darkolivegreen;
+  color: ivory;
+  border-radius: 8px;
+  border-color: darkolivegreen;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.imageDescription {
+  display: none;
+  height: 400px;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #999964;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #48582c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #37440e;
+}
+
+@-webkit-keyframes invalid {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  66% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes invalid {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  66% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media (max-width: 830px) {
+  h1 {
+    display: none;
+  }
+  img {
+    width: 90%;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=images.css.map */
