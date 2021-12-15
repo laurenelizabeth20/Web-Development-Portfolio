@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Justice League</title>
+</head>
+<body>
+    <header>
+    <h1 id='title'>Justice League</h1>
+    </header>
+    <ul id='roster'>
+    <li class='hero'>Superman</li>
+    <li class='vigilante hero' id='bats'>Batman</li>
+    <li class='hero'>Wonder Woman</li>
+    </ul>
+    <script>
+        //JS Notes: Terminal Commands
+        /*Getting Elements
+        const body = document.body;
+        body.nodeType;
+        body.nodeName;
+
+        Getting An Element By Its ID
+        const h1 = document.getElementById('title');
+
+        Get Elements By Their Tag Name
+        const listItems = document.getElementsByTagName('li');
+        listItems[0];
+        listItems[1];
+        listItems[2];
+
+        Get Elements By Their Class Name
+        const heroes = document.getElementsByClassName('hero');
+        heroes.length;
+
+        document.getElementsByClassName('villain').length;
+
+        Query Selectors
+        const ul = document.querySelector('ul#roster');
+        const wonderWoman = document.querySelector('ul#roster li:last-child');
+        const batman = ul.querySelector('li#bats')
+
+        Finding the Value of a Node
+        const textNode = wonderWoman.firstChild;
+        textNode.nodeValue;
+
+        Creating An Element
+        const flash = document.createElement('li');
+        const flashText = document.createTextNode('Flash');
+        flash.appendChild(flashText);
+        heroes.appendChild(flash);*/
+        
+        const h1 = document.getElementById('title');
+        const oldText = h1.firstChild;
+        const newText = document.createTextNode('Justice League of America');
+        h1.replaceChild(newText,oldText);
+    </script>
+</body>
+
+</html>

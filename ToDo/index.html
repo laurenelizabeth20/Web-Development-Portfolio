@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>To Do List</title>
+        <link rel="stylesheet" title="CSS" media="screen" href="style.css">
+    </head>
+    <body>
+        <div id="toDo">
+
+            <h1>Todos</h1>
+            <div id="toDoList">
+                <ul id="taskList">
+                    <li>
+                        <input type="checkbox" id="checkBox1">
+                        <label for="checkBox1">This is a template, the progam should replace this.</label>
+                        <button>x</button>
+                    </li>
+                </ul>
+
+                <div id="toDoFooter">
+                    <span id="taskCount">tasks left</span>
+                    <span class="filter right-align">
+
+                        <input type="radio" name="taskFilter" id="allTasks" checked>
+                        <label for="allTasks">All</label>
+
+                        <input type="radio" name="taskFilter" id="activeTasks">
+                        <label for="activeTasks">Active</label>
+
+                        <input type="radio" name="taskFilter" id="completedTasks">
+                        <label for="completedTasks">Completed</label>
+                    </span>
+                </div>
+            </div>
+
+            <form id="newTask" action="index.html">
+                <input type="text" id="taskText">
+                <button type="submit" id="addButton">+</button>
+
+            </form>
+        </div>
+        <script src="JavaScript/main.js" type="module"></script>
+    </body>
+</html>
